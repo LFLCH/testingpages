@@ -1,9 +1,7 @@
-<p>
-    Bonjour, que recherchez vous ?
-</p>
+<h1 class="text">que recherchez vous ?</h1>
   <div class="search-wrapper">
     <div class="search">
-      <input  autofocus [(ngModel)]="search"   (keyup.enter)="rechercher()">
+      <input  placeholder="Météo du jour..." autofocus [(ngModel)]="search"   (keyup.enter)="rechercher()">
       <button *ngIf="this.search!='' else no_search" mat-raised-button color="primary" (click)="rechercher()"><mat-icon>search</mat-icon>
       </button>
 
@@ -13,6 +11,7 @@
 
     </div>
   </div>
+  <h1 class="text">{{this.search}}</h1>
 
 
 

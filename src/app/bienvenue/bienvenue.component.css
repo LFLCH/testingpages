@@ -8,13 +8,13 @@
   flex-direction: row;
   background-color: rgba(221, 222, 223, 0.1);
   height: 2.4em
-
 }
 .search, input{
   border-radius: 10px;
 }
 input  {
-  text-align: end;
+  text-align: center;
+  font-size: larger;
   width: 100%;
   background-color: transparent;
   border: none;

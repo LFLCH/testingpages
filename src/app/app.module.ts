@@ -12,11 +12,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { RechercheComponent } from './recherche/recherche.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BienvenueComponent
+    BienvenueComponent,
+    RechercheComponent
   ],
   imports: [
     BrowserModule,

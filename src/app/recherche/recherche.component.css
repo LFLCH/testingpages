@@ -1,0 +1,34 @@
+.search-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.search{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(221, 222, 223, 0.1);
+  height: 2.4em
+}
+.search, input{
+  border-radius: 10px;
+}
+input  {
+  text-align: center;
+  font-size: larger;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size:x-large;
+  color: aliceblue;
+}
+input:focus {
+  outline: 0px;
+}
+button[no_search]{
+  background-color: gray;
+  cursor:not-allowed;
+}
+
+::placeholder{
+  color: rgb(240, 248, 255,0.5);
+}

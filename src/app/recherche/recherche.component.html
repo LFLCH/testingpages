@@ -1,0 +1,12 @@
+<div class="search-wrapper">
+  <div class="search">
+    <input  placeholder="Météo du jour..." autofocus [(ngModel)]="search"   (keyup.enter)="rechercher()">
+    <button *ngIf="this.search!='' else no_search" mat-raised-button color="primary" (click)="rechercher()"><mat-icon>search</mat-icon>
+    </button>
+
+    <ng-template #no_search>
+      <button no_search mat-raised-button ><mat-icon>search</mat-icon></button>
+    </ng-template>
+
+  </div>
+</div>

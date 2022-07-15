@@ -15,3 +15,7 @@ div.mat-dialog-title {
 .info-group {
   margin-top: 0.5em;
 }
+.loading-container{
+  display: flex;
+  justify-content: center;
+}

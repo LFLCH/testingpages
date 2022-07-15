@@ -1,7 +1,7 @@
 <div class="popup">
   <div mat-dialog-title> <mat-icon>info</mat-icon> Informations utilisateur</div>
   <mat-dialog-content class="mat-typography">
-    <div *ngIf="ic!==undefined">
+    <div *ngIf="ic!==undefined else no_results">
       <div class="info-container"><span class="info-label">Adresse IPv4</span><span class="info-value">{{ic.IPv4 }}</span></div>
       <div class="info-group"><div class="info-group-label">Informations de position</div>
       <div class="info-container"><span class="info-label">Pays</span><span class="info-value">{{ic.country_name}}</span></div>
@@ -10,5 +10,10 @@
       <div class="info-container"><span class="info-label">Code postal</span><span class="info-value">{{ic.postal}}</span></div>
       <div class="info-container"><span class="info-label">GPS</span><span class="info-value">[{{ic.latitude}}, {{ic.longitude}}]</span></div>
       </div></div>
+      <ng-template #no_results >
+        <div class="loading-container">
+          <mat-spinner></mat-spinner>
+        </div>
+      </ng-template>
   </mat-dialog-content>
 </div>

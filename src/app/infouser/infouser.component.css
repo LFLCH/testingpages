@@ -1,3 +1,6 @@
 ul {
   list-style:square;
 }
+mat-dialog-content{
+  font-size: larger;
+}

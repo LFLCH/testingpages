@@ -1,11 +1,14 @@
-<h1 *ngIf="ic!==undefined">
- Adresse IPv4 : {{ ic.IPv4 }}
+<h1 mat-dialog-title> <mat-icon>info</mat-icon> Informations utilisateur</h1>
+<mat-dialog-content class="mat-typography">
+  <div *ngIf="ic!==undefined">
+    Adresse IPv4 : {{ ic.IPv4 }}
+     <ul> Informations de position :
+       <li>Pays : {{ic.country_name}}</li>
+       <li>Département : {{ic.state}}</li>
+       <li>Ville : {{ic.city}}</li>
+       <li>Code postal : {{ic.postal}}</li>
+       <li>GPS : [{{ic.latitude}}, {{ic.longitude}}]</li>
+     </ul>
+    </div>
+</mat-dialog-content>
 
-  <ul> Informations de position :
-    <li>Pays : {{ic.country_name}}</li>
-    <li>Département : {{ic.state}}</li>
-    <li>Ville : {{ic.city}}</li>
-    <li>Code postal : {{ic.postal}}</li>
-    <li>GPS : [{{ic.latitude}}, {{ic.longitude}}]</li>
-  </ul>
-</h1>

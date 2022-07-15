@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-size: xx-large !important;
 }
 #recherche-part{
   display: flex;

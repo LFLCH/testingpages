@@ -1,25 +1,22 @@
 .search-wrapper{
   display: flex;
-  justify-content: center;
 }
 .search{
-  width: 70%;
   display: flex;
   flex-direction: row;
-  background-color: rgba(221, 222, 223, 0.1);
-  height: 2.4em
+  background-color: rgba(221, 222, 223, 0.2);
 }
 .search, input{
   border-radius: 10px;
 }
 input  {
-  text-align: center;
-  font-size: larger;
   width: 100%;
+  color:whitesmoke;
+  text-shadow:navy 0px 0 10px;
+  font-size:xx-large;
+  text-align: center;
   background-color: transparent;
   border: none;
-  font-size:x-large;
-  color: aliceblue;
 }
 input:focus {
   outline: 0px;
@@ -29,6 +26,6 @@ button[no_search]{
   cursor:not-allowed;
 }
 
-::placeholder{
-  color: rgb(240, 248, 255,0.5);
+::placeholder {
+  text-shadow: none;
 }

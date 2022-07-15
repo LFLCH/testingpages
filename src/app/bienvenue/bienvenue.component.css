@@ -1,4 +1,11 @@
-.text{
-  width: 100%;
-  text-align: center;
- }
+.compos {
+  height: 100%;display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#recherche-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

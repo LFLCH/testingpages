@@ -4,10 +4,15 @@ html, body { height: 100%; }
 body { margin: 0;
    font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color:gainsboro;
-  background-image: url("assets/images/feuillevannes.JPG");
+  background-image: url("assets/images/feuille2048.jpg");
   background-size: cover;
   background-position: center;
   color: aliceblue;
+}
+app-root {
+  height: 100%;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;

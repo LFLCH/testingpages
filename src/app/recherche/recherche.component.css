@@ -11,7 +11,7 @@
 }
 input  {
   width: 100%;
-  color:whitesmoke;
+  color: inherit;
   text-shadow:navy 0px 0 10px;
   font-size:xx-large;
   text-align: center;
@@ -22,10 +22,19 @@ input:focus {
   outline: 0px;
 }
 button[no_search]{
-  background-color: gray;
+  /*display: none;*/
+  background-color: rgba(128, 128, 128,0);
+  box-shadow:unset;
+  color: inherit;
   cursor:not-allowed;
+}
+button[search]{
+  background-color: navy;
+  box-shadow: 0px 0px 10px white;
+
 }
 
 ::placeholder {
   text-shadow: none;
+  color: gray;
 }

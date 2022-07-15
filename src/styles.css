@@ -3,11 +3,9 @@
 html, body { height: 100%; }
 body { margin: 0;
    font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color:gainsboro;
-  background-image: url("assets/images/feuille2048.jpg");
-  background-size: cover;
-  background-position: center;
-  color: aliceblue;
+   color:whitesmoke;
+  background-image: linear-gradient(to bottom, #002762, #005ba4, #008fba, #00c193, #12eb37);
+  background: linear-gradient(110deg, navy 60%, springgreen 60%);
 }
 app-root {
   height: 100%;

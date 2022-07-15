@@ -1,14 +1,14 @@
-<h1 mat-dialog-title> <mat-icon>info</mat-icon> Informations utilisateur</h1>
-<mat-dialog-content class="mat-typography">
-  <div *ngIf="ic!==undefined">
-    Adresse IPv4 : {{ ic.IPv4 }}
-     <ul> Informations de position :
-       <li>Pays : {{ic.country_name}}</li>
-       <li>Département : {{ic.state}}</li>
-       <li>Ville : {{ic.city}}</li>
-       <li>Code postal : {{ic.postal}}</li>
-       <li>GPS : [{{ic.latitude}}, {{ic.longitude}}]</li>
-     </ul>
-    </div>
-</mat-dialog-content>
-
+<div class="popup">
+  <div mat-dialog-title> <mat-icon>info</mat-icon> Informations utilisateur</div>
+  <mat-dialog-content class="mat-typography">
+    <div *ngIf="ic!==undefined">
+      <div class="info-container"><span class="info-label">Adresse IPv4</span><span class="info-value">{{ic.IPv4 }}</span></div>
+      <div class="info-group"><div class="info-group-label">Informations de position</div>
+      <div class="info-container"><span class="info-label">Pays</span><span class="info-value">{{ic.country_name}}</span></div>
+      <div class="info-container"><span class="info-label">Département</span><span class="info-value">{{ic.state}}</span></div>
+      <div class="info-container"><span class="info-label">Ville</span><span class="info-value">{{ic.city}}</span></div>
+      <div class="info-container"><span class="info-label">Code postal</span><span class="info-value">{{ic.postal}}</span></div>
+      <div class="info-container"><span class="info-label">GPS</span><span class="info-value">[{{ic.latitude}}, {{ic.longitude}}]</span></div>
+      </div></div>
+  </mat-dialog-content>
+</div>

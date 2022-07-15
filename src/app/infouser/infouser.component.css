@@ -1,6 +1,17 @@
 ul {
   list-style:square;
 }
-mat-dialog-content{
-  font-size: larger;
+div.mat-dialog-title {
+  display: flex;
+  align-items: center;
+}
+.info-container{
+  display: flex;
+  justify-content: space-between;
+}
+.info-group-label {
+  text-align: center;
+}
+.info-group {
+  margin-top: 0.5em;
 }

@@ -1,1 +1,11 @@
-<h1 class="info">{{ ipAddress }}</h1>
+<h1 *ngIf="ic!==undefined">
+ Adresse IPv4 : {{ ic.IPv4 }}
+
+  <ul> Informations de position :
+    <li>Pays : {{ic.country_name}}</li>
+    <li>Département : {{ic.state}}</li>
+    <li>Ville : {{ic.city}}</li>
+    <li>Code postal : {{ic.postal}}</li>
+    <li>GPS : [{{ic.latitude}}, {{ic.longitude}}]</li>
+  </ul>
+</h1>

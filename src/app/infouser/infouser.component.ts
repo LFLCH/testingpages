@@ -8,19 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfouserComponent implements OnInit {
 
-  ipAddress : string =''
+  ic: InfosClient | undefined;
 
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.getIPAddress()
+    this.updateInfosClient()
   }
 
-  getIPAddress()
+  updateInfosClient()
   {
-    this.http.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
-      this.ipAddress = res.ip;
-    });
+    const e = this.http.get<any>('https://geolocation-db.com/json/')
+    e.forEach(v =>{
+      this.ic = v;
+    })
   }
 
 }
+export interface InfosClient {
+  country_code: string;
+  country_name: string;
+  city:         string;
+  postal:       string;
+  latitude:     number;
+  longitude:    number;
+  IPv4:         string;
+  state:        string;
+}
+

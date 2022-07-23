@@ -1,7 +1,11 @@
 <div class="compos">
   <div  id="recherche-part">
-    <h1>que recherchez vous ?</h1>
+    <p>Bonjour,<fa-icon [icon]="meteoIcon"></fa-icon></p>
+        <h1>que recherchez vous ?</h1>
     <app-recherche></app-recherche>
   </div>
-  <button mat-button (click) ="infoUser()"><mat-icon>info</mat-icon> Voir mes informations</button>
+  <div>
+    <button mat-button (click)="couleur()" ><span class="icon-and-text"><fa-icon [icon]="colorIcon"></fa-icon> <span>Changer de couleur</span></span></button>
+    <button mat-button (click) ="infoUser()"><span class="icon-and-text"><fa-icon [icon]="locationIcon"></fa-icon> <span>Voir mes informations</span></span></button>
+  </div>
 </div>

@@ -12,7 +12,7 @@
 input  {
   width: 100%;
   color: inherit;
-  text-shadow:navy 0px 0 10px;
+  text-shadow:white 0px 0 2px;
   font-size:xx-large;
   text-align: center;
   background-color: transparent;
@@ -27,11 +27,6 @@ button[no_search]{
   box-shadow:unset;
   color: inherit;
   cursor:not-allowed;
-}
-button[search]{
-  background-color: navy;
-  box-shadow: 0px 0px 10px white;
-
 }
 
 ::placeholder {

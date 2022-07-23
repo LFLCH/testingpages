@@ -1,5 +1,4 @@
-<div class="popup">
-  <div mat-dialog-title> <mat-icon>info</mat-icon> Informations utilisateur</div>
+<div mat-dialog-title> <mat-icon>info</mat-icon> Informations utilisateur</div>
   <mat-dialog-content class="mat-typography">
     <div *ngIf="ic!==undefined else no_results">
       <div class="info-container"><span class="info-label">Adresse IPv4</span><span class="info-value">{{ic.IPv4 }}</span></div>
@@ -16,4 +15,3 @@
         </div>
       </ng-template>
   </mat-dialog-content>
-</div>

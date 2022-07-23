@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
 }
-button {
-  border-radius: 10px;
+.icon-and-text{
+  display: flex;
+  gap:5px;
 }

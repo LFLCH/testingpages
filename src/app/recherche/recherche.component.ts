@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CouleurService } from '../couleur/couleur.service';
 
 @Component({
   selector: 'app-recherche',
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class RechercheComponent implements OnInit {
 
   search ="";
+  couleurBouton = 'navy'
 
-  constructor() { }
+  constructor(private colorService : CouleurService) {
+
+  }
 
   ngOnInit(): void {
   }
@@ -22,5 +26,8 @@ export class RechercheComponent implements OnInit {
 
   public recherche():string{
     return "https://www.google.com/search?q="+this.search;
+  }
+  selection():void{
+    this.couleurBouton = this.colorService.getCouleursBG()[1]
   }
 }

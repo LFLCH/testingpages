@@ -17,13 +17,17 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { RechercheComponent } from './recherche/recherche.component';
 import { InfouserComponent } from './infouser/infouser.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ColorPickerModule } from 'ngx-color-picker';
+import { CouleurComponent } from './couleur/couleur.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenueComponent,
     RechercheComponent,
-    InfouserComponent
+    InfouserComponent,
+    CouleurComponent
   ],
   imports: [
     BrowserModule,
@@ -34,9 +38,11 @@ import { InfouserComponent } from './infouser/infouser.component';
     MatIconModule,
     MatDividerModule,
     MatDialogModule,
+    ColorPickerModule,
     MatProgressSpinnerModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
